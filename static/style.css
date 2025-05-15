@@ -186,4 +186,35 @@ footer {
 .tool-card button:hover {
     background-color: #e55b50;
 }
-          
+
+.info-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #3498db;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    text-align: justify;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Arriba del icono */
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.95em;
+}
+
+.info-icon:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
